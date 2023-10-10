@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-
+  ancho:number = 0
+  ngOnInit(){
+    console.log(window.screenX)
+  }
+  
 }
