@@ -5,7 +5,8 @@ nav{
     font-size: 18px;
     color: $colors-text-1;
     font-weight: 800;
-    margin: auto 20vw;
+    margin: 0 auto;
+    max-width: 1100px;
     padding-top: 1.5vh;
 }
 
@@ -73,7 +74,67 @@ li{
     
     
 }
- 
+
+@media(920px <= width <= 1150px){
+    nav{
+        background-color: red;
+        max-width: 800px;
+    }
+}
+
+
+@media(width <= 920px){
+    nav{
+        justify-content: center;
+        max-width: 600px;
+        position: relative;
+    }
+
+    a{
+        padding: 0;
+        margin: 0;
+    }
+
+    li{
+        /* padding: 40px 0; */
+        margin: 0;
+        flex-basis: 0;
+      
+    }
+
+    .lista{
+        display: none; 
+    } 
+
+    .nav_toggle{
+        display: inline;
+        position: absolute;
+        left: -5%;
+    } 
+    .icons{
+        display: none;
+    }
+
+    .nav_toglle_active{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1000;
+        position: absolute;
+        gap: 30px;
+        top: 91px;
+        margin-top: 20px;
+        width: 100%;
+        
+    }
+}
+
+@media(width <= 650px){
+    .nav_toggle{
+        left: 0;
+    }
+}
+
 
 
 

@@ -1,17 +1,26 @@
 
-  <nav class="tw-flex tw-justify-between tw-mx-auto">
-    <div class="tw-flex tw-items-center tw-grow tw-basis-0">
+
+
+<nav class="tw-flex tw-justify-between tw-mx-auto tw-items-center ">
+    <button (click)="toggle()" class="nav_toggle tw-hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="52" height="52" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"  stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M4 6l16 0"></path>
+        <path d="M4 12l16 0"></path>
+        <path d="M4 18l16 0"></path>
+     </svg>
+    </button>
+    <div class="logo tw-flex tw-items-center movile:tw-grow movile:tw-basis-0">
       <img
         src="../../../assets/vecteezy_colorfull-modern-letter-in-3d-style-text-effect_13643512_577.png"
         width="58px"
         alt="Logo de la pagina"
       />
       
-        <h1 class="tw-hidden xl:tw-block tw-text-center">VALORANSTUDY</h1>
-      
+        <h1 class="xl:tw-block tw-text-center">VALORANSTUDY</h1>
     </div>
   
-    <ul class="tw-flex tw-justify-center tw-items-center tw-gap-6 2xl:tw-gap-10 ">
+    <ul class="lista tw-flex movile:tw-mx-2 movile:tw-justify-center movile:tw-items-center movile:tw-gap-6 2xl:tw-gap-10 ">
       <li class="links">
         <a>AGENTES</a>
       </li>

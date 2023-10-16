@@ -14,3 +14,22 @@
         color: $color-border-1
     }
 }
+
+.grid{
+    display: grid;
+    max-width: 1100px;
+    height: 300px;
+    margin: 15vh auto 0;
+    grid-template-columns: 50% 50% ;
+    grid-template-rows: 50% 50% ;
+    gap: 40px;
+
+    div:hover{
+        -webkit-box-shadow: 38px 31px 46px -49px rgba(242,232,255,1);
+-moz-box-shadow: 38px 31px 46px -49px rgba(242,232,255,1);
+box-shadow: 38px 31px 46px -49px rgba(242,232,255,1);
+    }
+}
+
+
+/* tw-grid tw-grid-cols-2 tw-grid-row-2 tw-max-w-[1100px] tw-mx-auto tw-mt-32 tw-gap-2 */

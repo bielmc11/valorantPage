@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { UiService } from 'src/app/services/ui.service';
 
 @Component({
   selector: 'app-header',
@@ -6,9 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  ancho:number = 0
-  ngOnInit(){
-    console.log(window.screenX)
+  ui = inject(UiService);
+
+  toggle(){
+    const lista = document.querySelector('.lista');
+    this.ui.change();
+    lista?.classList.toggle('nav_toglle_active')
   }
-  
 }
